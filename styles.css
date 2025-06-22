@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&family=Shadows+Into+Light&display=swap');
+
+body {
+  background: linear-gradient(135deg, #e2efe7 0%, #e2eafc 100%);
+  font-family: 'Poppins', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 980px;
+  margin: 38px auto;
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 8px 36px rgba(28,81,73,0.12);
+  padding: 38px 38px 28px 38px;
+}
+
+header {
+  text-align: center;
+  border-bottom: 2.5px solid #abd6c5;
+  margin-bottom: 32px;
+  padding-bottom: 15px;
+}
+
+header h1 {
+  font-family: 'Shadows Into Light', cursive, sans-serif;
+  font-size: 3rem;
+  letter-spacing: 3px;
+  color: #326b4d;
+  margin-bottom: 0;
+  text-shadow: 2px 2px 0px #e3fcec, 0 2px 16px #b6eace55;
+}
+
+.category {
+  margin-bottom: 48px;
+}
+
+.category h2 {
+  margin-top: 0;
+  font-size: 1.4rem;
+  color: #1f5e41;
+  font-family: 'Poppins', Arial, sans-serif;
+  letter-spacing: 0.5px;
+  margin-bottom: 8px;
+}
+
+.subtitle {
+  margin: 0 0 18px 0;
+  color: #506461;
+  font-size: 1.07rem;
+  font-style: italic;
+}
+
+.items-row {
+  display: flex;
+  gap: 32px;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.item {
+  background: linear-gradient(132deg, #f4fbf7 60%, #edf7fd 100%);
+  border: 2.2px solid #ceefd3;
+  border-radius: 16px;
+  padding: 20px 13px 14px 13px;
+  width: 190px;
+  min-height: 232px;
+  box-shadow: 1px 2px 23px rgba(76,140,110,0.06), 0 2px 2px rgba(221,241,227,0.8);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: box-shadow 0.25s, transform 0.18s, border 0.25s;
+  position: relative;
+  z-index: 1;
+}
+
+.item:hover {
+  box-shadow: 0 8px 38px 0 rgba(41,124,67,0.21), 0 0px 0px #fff;
+  border-color: #7cd9a2;
+  transform: translateY(-6px) scale(1.024);
+}
+
+.item-img {
+  width: 90px;
+  height: 90px;
+  border-radius: 11px;
+  margin-bottom: 15px;
+  background: #fff;
+  border: 1.5px solid #bbded6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 5px 20px #8aeadb25;
+  transition: box-shadow 0.23s, transform 0.2s;
+}
+
+.item:hover .item-img {
+  box-shadow: 0 8px 40px #37cf8a33, 0 2px 10px #cedae2;
+  background: #f7fff9;
+  transform: scale(1.08) rotate(-3deg);
+}
+
+/* Improved SVG visual style for "hand-drawn" look with color pop */
+
+.tent1::before {
+  content: '';
+  display: block;
+  width: 60px; height: 60px;
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="60" height="60"><polyline points="8,54 30,11 52,54 30,39 8,54" fill="none" stroke="%2336ad61" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/><line x1="19" y1="34" x2="41" y2="34" stroke="%2342897b" stroke-width="2.2" stroke-linecap="round"/></svg>');
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin: 0 auto;
+  filter: drop-shadow(0 2px 8px #48bb7850);
+}
+.tent2::before {
+  content: '';
+  display: block;
+  width: 60px; height: 60px;
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="60" height="60"><polyline points="12,49 30,17 48,49" fill="none" stroke="%2342b853" stroke-width="3.1" stroke-linecap="round" /><rect x="23" y="34" width="14" height="13" fill="none" stroke="%23558e5e" stroke-width="2.1"/></svg>');
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin: 0 auto;
+  filter: drop-shadow(0 2px 7px #34c19635);
+}
+.tent3::before {
+  content: '';
+  display: block;
+  width: 60px; height: 60px;
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="60" height="60"><rect x="10" y="32" width="40" height="18" fill="none" stroke="%234ab7a0" stroke-width="2.2"/><rect x="20" y="39" width="10" height="7" fill="none" stroke="%2364bad9" stroke-width="1.6"/><rect x="34" y="39" width="12" height="7" fill="none" stroke="%2374b471" stroke-width="1.6"/></svg>');
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin: 0 auto;
+  filter: drop-shadow(0 2px 8px #a0e7ed60);
+}
+
+.backpack1::before {
+  content: '';
+  display: block;
+  width: 54px; height: 54px;
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="54" height="54"><ellipse cx="27" cy="29" rx="17" ry="18" fill="none" stroke="%235b8b3e" stroke-width="2.4"/><rect x="15" y="27" width="24" height="16" fill="none" stroke="%2367934a" stroke-width="2"/><rect x="19" y="33" width="16" height="6" fill="none" stroke="%235e8554" stroke-width="1.4"/><path d="M27 16 Q13 24 15 27" fill="none" stroke="%23578742" stroke-width="1.7"/></svg>');
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin: 0 auto;
+  filter: drop-shadow(0 2px 6px #49d47649);
+}
+.backpack2::before {
+  content: '';
+  display: block;
+  width: 54px; height: 54px;
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="54" height="54"><rect x="13" y="14" width="28" height="24" fill="none" stroke="%233f9e67" stroke-width="2.1"/><ellipse cx="27" cy="27" rx="12" ry="14" fill="none" stroke="%2341be99" stroke-width="2"/><rect x="21" y="22" width="12" height="10" fill="none" stroke="%237abf7c" stroke-width="1.3"/></svg>');
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin: 0 auto;
+  filter: drop-shadow(0 2px 8px #7be99550);
+}
+.backpack3::before {
+  content: '';
+  display: block;
+  width: 54px; height: 54px;
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="54" height="54"><ellipse cx="27" cy="30" rx="13" ry="12" fill="none" stroke="%2352b89d" stroke-width="2.1"/><rect x="20" y="30" width="14" height="8" fill="none" stroke="%2371e1b4" stroke-width="1.2"/><line x1="27" y1="16" x2="27" y2="30" stroke="%2345c396" stroke-width="1.5"/></svg>');
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin: 0 auto;
+  filter: drop-shadow(0 2px 9px #1ae09933);
+}
+
+.jacket::before {
+  content: '';
+  display: block;
+  width: 58px; height: 58px;
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="58" height="58"><rect x="15" y="18" width="28" height="30" fill="none" stroke="%236342c2" stroke-width="2.4"/><rect x="23" y="27" width="5" height="11" fill="none" stroke="%239868cf" stroke-width="1.3"/><rect x="30" y="27" width="5" height="11" fill="none" stroke="%239868cf" stroke-width="1.3"/><line x1="29" y1="18" x2="29" y2="48" stroke="%23766ed2" stroke-width="1.6"/></svg>');
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin: 0 auto;
+  filter: drop-shadow(0px 2px 7px #b388fd44);
+}
+.pants::before {
+  content: '';
+  display: block;
+  width: 48px; height: 60px;
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="48" height="60"><rect x="8" y="10" width="12" height="40" fill="none" stroke="%236b70be" stroke-width="2.3"/><rect x="28" y="10" width="12" height="40" fill="none" stroke="%236b70be" stroke-width="2.3"/><line x1="14" y1="10" x2="14" y2="50" stroke="%236b70be" stroke-width="1.3"/></svg>');
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin: 0 auto;
+  filter: drop-shadow(0 2px 8px #a5cef9aa);
+}
+.boots::before {
+  content: '';
+  display: block;
+  width: 61px; height: 36px;
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="61" height="36"><rect x="7" y="18" width="22" height="12" fill="none" stroke="%23674737" stroke-width="2.5"/><rect x="32" y="12" width="22" height="16" fill="none" stroke="%23859c5f" stroke-width="2.5"/><line x1="17" y1="26" x2="54" y2="26" stroke="%23674737" stroke-width="1.7"/></svg>');
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin: 12px auto 0 auto;
+  filter: drop-shadow(0 2px 8px #e5ad7c44);
+}
+
+/* Typography */
+.item-title {
+  font-size: 1.12rem;
+  font-weight: 700;
+  text-align: center;
+  margin: 8px 0 1px 0;
+  color: #216243;
+  font-family: 'Poppins', Arial, sans-serif;
+  letter-spacing: 0.2px;
+}
+
+.item-price {
+  color: #4e8762;
+  font-size: 1.09rem;
+  margin-top: 3px;
+  font-weight: 700;
+}
+
+/* Responsive for smaller screens */
+@media (max-width: 990px) {
+  .container {padding: 20px;}
+  .items-row {gap: 20px;}
+}
+@media (max-width: 790px) {
+  .items-row {flex-wrap: wrap;}
+  .item {width: 48vw;}
+}
+@media (max-width: 600px) {
+  .header h1 {font-size: 2rem;}
+  .item {width: 97vw;}
+  .container {padding: 5px;}
+}
