@@ -50,6 +50,7 @@ export async function main() {
 }
 
 main().catch((err) => {
-  console.error("The sample encountered an error:", err);
+  const errorMsg = err && err.message ? err.message : JSON.stringify(err, null, 2);
+  console.error("The sample encountered an error:", errorMsg);
 });
 
