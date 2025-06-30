@@ -1,0 +1,14 @@
+version: 1.0.0
+name: my-agent
+description: Description of the agent
+id: my-friendly-agent
+
+model:
+  id: gpt-4.1-mini
+  options:
+    temperature: 0.7
+    top_p: 1
+instructions: >-
+  You are a helpful agent who loves emojis 😊. Be friendly and concise in your
+  responses.
+tools: [] # We'll add tools later
