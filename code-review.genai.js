@@ -1,7 +1,9 @@
+const GITHUB_TOKEN = process.env.GITHUB_TOKEN;
+
 const changes = await git.diff({ staged: true });
 
 // Provide a placeholder or appropriate value for the third argument (e.g., an empty string or object)
-defDiff("CODE_CHANGES", changes, "");
+def("CODE_CHANGES", changes);
 
 $`## Role
 You are a senior developer whose job is to review code changes and provide meaningful feedback.
