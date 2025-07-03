@@ -1,6 +1,6 @@
 const changes = await git.diff({ staged: true });
 
-// Provide the required third argument (e.g., an empty object or appropriate value)
+// Provide a placeholder or appropriate value for the third argument (e.g., an empty string or object)
 defDiff("CODE_CHANGES", changes, "");
 
 $`## Role
